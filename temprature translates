@@ -1,0 +1,30 @@
+
+	
+	switch (choose){
+		case 'c' : 
+		printf("Fahreneit degerin, girin:\n");
+		scanf("%d", &number);
+		printf("Celcius degeri: %d\n ", fahtocel(number));
+		break;
+		
+		case'f' : 
+			printf("Celcius degerini giriniz: \n");
+			scanf("%d", &number);
+			printf("Fahrenheit degeri: %d \n",celtofah(number));
+			break;
+		
+		default: printf(" Yanlis deger girildi!!!Aptal");
+		
+	}
+	
+	return 0;
+}
+
+int celtofah(degree){
+	
+	return (degree*9/5)+32 ;
+}
+
+int fahtocel (degree){
+	 return (degree-32)*5/9 ;
+}
